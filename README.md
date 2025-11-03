@@ -25,7 +25,14 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
+## 📝 Changelog v2.2.0 
+1. Macan Audio Player v7.0.0 - 7.2.0
+	- Added new function to Macan Quick View, namely the format register function (association file) .jpg, .jpeg, .bmp, .png, .webp
 
+2. Macan Video Downloader v6.4.0 - 6.5.0
+	- Added Video Converter
+	- Update Engine (macan-engine)
+---
 ## 🚀 Getting Started & Installation
 
 This repository provides pre-compiled binaries for direct use. No cloning or source code compilation is required.
