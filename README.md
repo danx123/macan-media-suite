@@ -27,7 +27,8 @@ This suite comprises five core applications, each engineered for a specific medi
 ---
 ## 📝 Changelog v2.2.0 
 1. Macan Audio Player v7.0.0 - 7.2.0
-	- Added new function to Macan Quick View, namely the format register function (association file) .jpg, .jpeg, .bmp, .png, .webp
+	- Fixed volume-muted svg
+	- Added format register function (association files).mp3, .m4a, .ogg, .flac
 
 2. Macan Video Downloader v6.4.0 - 6.5.0
 	- Added Video Converter
