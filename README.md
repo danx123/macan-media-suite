@@ -27,7 +27,7 @@ This suite comprises five core applications, each engineered for a specific medi
 ---
 ## 📝 Changelog v2.3.0 
 1. Macan Vision v2.3.0 - 2.4.1
-- - Changed engine using libvlc
+- Changed engine using libvlc
 - Improve Performance
 ---
 ## 🚀 Getting Started & Installation
