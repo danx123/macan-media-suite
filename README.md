@@ -25,14 +25,10 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v2.2.0 
-1. Macan Audio Player v7.0.0 - 7.2.0
-	- Fixed volume-muted svg
-	- Added format register function (association files).mp3, .m4a, .ogg, .flac
-
-2. Macan Video Downloader v6.4.0 - 6.5.0
-	- Added Video Converter
-	- Update Engine (macan-engine)
+## 📝 Changelog v2.3.0 
+1. Macan Vision v2.3.0 - 2.4.1
+- - Changed engine using libvlc
+- Improve Performance
 ---
 ## 🚀 Getting Started & Installation
 
