@@ -25,23 +25,26 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v2.4.0
-1. Macan Movie Pro v3.8.0 - 4.0.0
-🚀 Performance & Responsiveness
-Asynchronous Thumbnail Generation: This is the most significant change. The synchronous generate_thumbnail function has been replaced by a multithreaded system using QThreadPool and QRunnable (ThumbnailWorker).
-Non-Blocking UI: Thumbnails for the collection (VideoThumbnailWidget) and folder previews (FolderThumbnailWidget) are now generated in the background. This prevents the user interface from freezing or stuttering when loading or scrolling through large video libraries.
-Lazy Loading: Widgets now display a "Loading..." placeholder text and are updated with the thumbnail image via a Qt signal (@Slot) once the background worker completes its task.
-🌎 Internationalization (i18n)
-UI Translation: A comprehensive pass was made to translate the application's user interface from Indonesian (Bahasa Indonesia) to English.
-Affected Components: This includes tooltips, button labels, placeholders, dialog titles, and message box text in ModernVideoPlayer, MainWindow, OnlineTVDialog, and ManageFoldersDialog.
-🎨 UI & Style Refinements
-QComboBox Style Fix: Corrected a UI defect where QComboBox dropdown menus (e.g., "Sort by" and "Playlist Source") did not inherit the application's dark theme. Explicit styling was added to their QAbstractItemView for a consistent look and feel.
-Icon & Branding Update:
-The application icon reference was updated from player.ico to macan_movie.ico.
-The "About" dialog title and text were updated from "Macan Movie" to "Macan Movie Pro".
-🧹 Code Refactoring
-Sorting Logic: The sorting logic in MainWindow.sort_and_reflow was simplified. It now defaults to sorting by name and explicitly checks for the date sorting option, improving code clarity.
-Import Optimization: Added QRunnable and QThreadPool to Qt imports to support the new asynchronous thumbnail system.
+## 📝 Changelog v2.5.0
+1. Macan Video Downloader - Premium Edition v6.5.0 - 6.6.0
+    - Fix stylesheet checkbox
+    - Update Engine (macan-engine)
+
+2. Macan Audio Player v7.2.0 - 7.5.0
+   🚀 New Features
+Add File(s) Functionality
+A new "Add File(s)" button and corresponding icon (add-file) have been added to the main control panel.
+This allows users to select and add one or more individual audio files (e.g., .mp3, .flac) via a file dialog, supplementing the existing "Add Folder" capability.
+Windows File Association
+A "Register format" option has been added to the main options menu.
+This feature allows users on Windows to associate supported audio formats (.mp3, .m4a, .ogg, .flac, .wav) with the Macan Audio Player.
+The system now includes helper functions (is_admin, run_as_admin, perform_windows_registration) to check for administrator privileges, request UAC elevation, and safely modify the Windows Registry.
+Code & Refactoring
+Custom PlaylistWidget Class
+The standard QListWidget for the playlist has been refactored into a new custom class, PlaylistWidget.
+This change encapsulates the playlist's setup logic (e.g., drag/drop modes) and prepares the codebase for more advanced, playlist-specific features in the future.
+Preparatory Code
+Added a (currently unused) handle_playlist_drop method, indicating future work on enhancing drag-and-drop functionality directly onto the playlist widget.
 ---
 ## 🚀 Getting Started & Installation
 
