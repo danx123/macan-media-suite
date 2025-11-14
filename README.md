@@ -25,26 +25,35 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v2.5.0
-1. Macan Video Downloader - Premium Edition v6.5.0 - 6.6.0
-    - Fix stylesheet checkbox
-    - Update Engine (macan-engine)
+## 📝 Changelog v2.6.0
+1. Macan Video Downloader - Premium Edition v6.6.1 - 7.0.0
+✨ Added
+CLI (Command-Line Interface) Mode:
+A new "CLI Mode" checkbox has been added to the main interface.
+When enabled, this mode switches the queue to a raw text log, displaying all output directly from the macan-engine.
+Adding URLs in this mode bypasses thumbnail and metadata fetching, allowing for rapid-fire queuing and immediate download.
+Queue Context Menu & Multi-Select:
+The download table now supports multi-selection of items.
+A new right-click context menu has been implemented, providing the following actions:
+Play: Opens the completed video or audio file.
+Remove from List: Removes selected items from the queue (does not delete the file).
+Delete from Disk: Permanently deletes the downloaded file from your computer (a confirmation prompt is shown).
+🐞 Fixed
+"Stop Download" Button Logic:
+Resolved a major bug where the "Stop Download" button would not correctly terminate the download queue.
+The button now immediately kills the active download process, marks the stopped item as "Error," and reliably prevents the next item in the queue from starting automatically.
+File Path Parsing:
+Fixed a critical error where file paths containing quotes or trailing spaces were not parsed correctly. This ensures that files are found and can be played after a successful download.
+Asset Path Portability:
+Corrected the pathing logic for icons and assets. The application will now correctly load all icons regardless of the directory it is run from, improving portability.
+🛠️ Changed / Improved
+Translation Engine:
+The internal internationalization (i18n) function has been upgraded to be more robust, improving support for default text and formatted strings.
+UI Refactoring:
+Refactored the logic for updating and rebuilding the queue table, resulting in more stable performance, especially when removing items from the list.
+Styling:
+Updated the application's stylesheet to support the new CLI view, table selection colors, and the context menu for a consistent dark-mode experience.
 
-2. Macan Audio Player v7.2.0 - 7.5.0
-   🚀 New Features
-Add File(s) Functionality
-A new "Add File(s)" button and corresponding icon (add-file) have been added to the main control panel.
-This allows users to select and add one or more individual audio files (e.g., .mp3, .flac) via a file dialog, supplementing the existing "Add Folder" capability.
-Windows File Association
-A "Register format" option has been added to the main options menu.
-This feature allows users on Windows to associate supported audio formats (.mp3, .m4a, .ogg, .flac, .wav) with the Macan Audio Player.
-The system now includes helper functions (is_admin, run_as_admin, perform_windows_registration) to check for administrator privileges, request UAC elevation, and safely modify the Windows Registry.
-Code & Refactoring
-Custom PlaylistWidget Class
-The standard QListWidget for the playlist has been refactored into a new custom class, PlaylistWidget.
-This change encapsulates the playlist's setup logic (e.g., drag/drop modes) and prepares the codebase for more advanced, playlist-specific features in the future.
-Preparatory Code
-Added a (currently unused) handle_playlist_drop method, indicating future work on enhancing drag-and-drop functionality directly onto the playlist widget.
 ---
 ## 🚀 Getting Started & Installation
 
