@@ -25,34 +25,32 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v2.6.0
-1. Macan Video Downloader - Premium Edition v6.6.1 - 7.0.0
-✨ Added
-CLI (Command-Line Interface) Mode:
-A new "CLI Mode" checkbox has been added to the main interface.
-When enabled, this mode switches the queue to a raw text log, displaying all output directly from the macan-engine.
-Adding URLs in this mode bypasses thumbnail and metadata fetching, allowing for rapid-fire queuing and immediate download.
-Queue Context Menu & Multi-Select:
-The download table now supports multi-selection of items.
-A new right-click context menu has been implemented, providing the following actions:
-Play: Opens the completed video or audio file.
-Remove from List: Removes selected items from the queue (does not delete the file).
-Delete from Disk: Permanently deletes the downloaded file from your computer (a confirmation prompt is shown).
-🐞 Fixed
-"Stop Download" Button Logic:
-Resolved a major bug where the "Stop Download" button would not correctly terminate the download queue.
-The button now immediately kills the active download process, marks the stopped item as "Error," and reliably prevents the next item in the queue from starting automatically.
-File Path Parsing:
-Fixed a critical error where file paths containing quotes or trailing spaces were not parsed correctly. This ensures that files are found and can be played after a successful download.
-Asset Path Portability:
-Corrected the pathing logic for icons and assets. The application will now correctly load all icons regardless of the directory it is run from, improving portability.
-🛠️ Changed / Improved
-Translation Engine:
-The internal internationalization (i18n) function has been upgraded to be more robust, improving support for default text and formatted strings.
-UI Refactoring:
-Refactored the logic for updating and rebuilding the queue table, resulting in more stable performance, especially when removing items from the list.
-Styling:
-Updated the application's stylesheet to support the new CLI view, table selection colors, and the context menu for a consistent dark-mode experience.
+## 📝 Changelog v2.7.0
+1. Macan Audio Player v7.5.0 - 7.8.0
+Fixes & Enhancements
+Playlist Insertion Logic: Fixed an issue where new tracks added via the "Add File(s)" button or drag-and-drop were always appended to the end of the list. New files are now inserted directly below the currently playing track for improved queue management.
+Playlist Multi-Selection: Enabled extended selection (Shift + Ctrl) in the playlist widget, allowing users to select and manage multiple tracks simultaneously.
+
+2. Macan Vision v2.4.1 - 2.5.0
+🚀 Major Improvements (The Fix)
+[FIX] Fixed a freeze or "Not Responding" bug that occurred when the app tried to play a TV or Radio stream that was dead, had an error, or was otherwise inaccessible.
+
+[IMPROVEMENT] Completely overhauled error handling logic:
+
+PREVIOUSLY: Displayed a QMessageBox dialog when a stream had an error. This apparently caused a deadlock (the app crashed) because it was called from the wrong thread.
+
+NOW: If a stream error is detected, the app will not display any dialog. Instead, it will automatically try to play the next channel in the list (auto-next channel).
+
+💻 Technical Changes (Behind the Scenes)
+[REFACTOR] Implemented the Qt Signals & Slots mechanism for all VLC player events (LibVLC).
+
+[NEW] Added a new VlcEventSignals class. This class acts as a safe bridge for sending "messages" (such as playerError, playerPlaying, etc.) from the VLC thread to the main GUI thread.
+
+[REFACTOR] Separated the VLC event handler logic into two parts to ensure thread safety:
+
+Handlers (on_vlc_..._handler): These functions run on the VLC thread and are now ONLY responsible for emitting signals (sending messages).
+
+Slots (on_player_..._slot): These functions run on the main GUI thread after receiving a signal. All UI logic (changing status labels, changing icons, visualizers) and auto-next logic (in on_player_error_slot) have been moved here.
 
 ---
 ## 🚀 Getting Started & Installation
