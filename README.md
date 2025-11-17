@@ -25,33 +25,18 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v2.7.0
+## 📝 Changelog v2.8.0
 1. Macan Audio Player v7.5.0 - 7.8.0
 Fixes & Enhancements
-Playlist Insertion Logic: Fixed an issue where new tracks added via the "Add File(s)" button or drag-and-drop were always appended to the end of the list. New files are now inserted directly below the currently playing track for improved queue management.
-Playlist Multi-Selection: Enabled extended selection (Shift + Ctrl) in the playlist widget, allowing users to select and manage multiple tracks simultaneously.
+- Playlist Insertion Logic: Fixed an issue where new tracks added via the "Add File(s)" button or drag-and-drop were always appended to the end of the list. New files are now inserted directly below the currently playing track for improved queue management.
+- Playlist Multi-Selection: Enabled extended selection (Shift + Ctrl) in the playlist widget, allowing users to select and manage multiple tracks simultaneously.
+- Fixed Multiple Remove Track
 
-2. Macan Vision v2.4.1 - 2.5.0
-🚀 Major Improvements (The Fix)
-[FIX] Fixed a freeze or "Not Responding" bug that occurred when the app tried to play a TV or Radio stream that was dead, had an error, or was otherwise inaccessible.
-
-[IMPROVEMENT] Completely overhauled error handling logic:
-
-PREVIOUSLY: Displayed a QMessageBox dialog when a stream had an error. This apparently caused a deadlock (the app crashed) because it was called from the wrong thread.
-
-NOW: If a stream error is detected, the app will not display any dialog. Instead, it will automatically try to play the next channel in the list (auto-next channel).
-
-💻 Technical Changes (Behind the Scenes)
-[REFACTOR] Implemented the Qt Signals & Slots mechanism for all VLC player events (LibVLC).
-
-[NEW] Added a new VlcEventSignals class. This class acts as a safe bridge for sending "messages" (such as playerError, playerPlaying, etc.) from the VLC thread to the main GUI thread.
-
-[REFACTOR] Separated the VLC event handler logic into two parts to ensure thread safety:
-
-Handlers (on_vlc_..._handler): These functions run on the VLC thread and are now ONLY responsible for emitting signals (sending messages).
-
-Slots (on_player_..._slot): These functions run on the main GUI thread after receiving a signal. All UI logic (changing status labels, changing icons, visualizers) and auto-next logic (in on_player_error_slot) have been moved here.
-
+2. Macan Video Downloader Premium Edition v7.0.0 - 7.3.0
+✨ New Features
+Implemented Queue Statistics Panel: Added a new display panel at the top of the application to provide users with at-a-glance information about the download queue.
+Added Total Progress Monitor: The panel now displays the total number of items in the queue ("Total: X") and tracks overall completion ("Progress: Y/X"). This count updates automatically as items are added, removed, or completed.
+Added Elapsed Time Counter: A new "Elapsed: HH:MM:SS" timer now actively tracks the duration of the download process. The timer starts when the queue is initiated and stops automatically upon completion or when manually stopped by the user.
 ---
 ## 🚀 Getting Started & Installation
 
