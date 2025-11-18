@@ -25,18 +25,9 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v2.8.0
-1. Macan Audio Player v7.5.0 - 7.8.0
-Fixes & Enhancements
-- Playlist Insertion Logic: Fixed an issue where new tracks added via the "Add File(s)" button or drag-and-drop were always appended to the end of the list. New files are now inserted directly below the currently playing track for improved queue management.
-- Playlist Multi-Selection: Enabled extended selection (Shift + Ctrl) in the playlist widget, allowing users to select and manage multiple tracks simultaneously.
-- Fixed Multiple Remove Track
-
-2. Macan Video Downloader Premium Edition v7.0.0 - 7.3.0
-✨ New Features
-Implemented Queue Statistics Panel: Added a new display panel at the top of the application to provide users with at-a-glance information about the download queue.
-Added Total Progress Monitor: The panel now displays the total number of items in the queue ("Total: X") and tracks overall completion ("Progress: Y/X"). This count updates automatically as items are added, removed, or completed.
-Added Elapsed Time Counter: A new "Elapsed: HH:MM:SS" timer now actively tracks the duration of the download process. The timer starts when the queue is initiated and stops automatically upon completion or when manually stopped by the user.
+## 📝 Changelog v2.9.0
+1. Macan Video Player v3.6.1 - 4.0.0
+- Changed control icon from qtawesome to svg xml
 ---
 ## 🚀 Getting Started & Installation
 
