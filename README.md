@@ -25,9 +25,15 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v2.9.0
-1. Macan Video Player v3.6.1 - 4.0.0
-- Changed control icon from qtawesome to svg xml
+## 📝 Changelog v3.0.0
+1. Macan Movie Pro v4.0.0 - 4.2.0
+- Fixed Remove History
+- Fixed Clear All History
+
+2. Macan Audio Player v7.8.2 - 8.0.0
+- Added Running Text (Marquee) status bar
+- Added QSettings for Radio
+- Added Radio Sync with Dynamic Aura
 ---
 ## 🚀 Getting Started & Installation
 
