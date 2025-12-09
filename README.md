@@ -29,6 +29,7 @@ This suite comprises five core applications, each engineered for a specific medi
 Update Macan Engine:
 1. Macan Video Downloader
 2. Macan Video Player
+3. Macan Movie Pro
 ---
 ## 🚀 Getting Started & Installation
 
