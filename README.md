@@ -25,10 +25,10 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v4.5.0
-1. Macan Audio Player v8.5.1 - 8.6.0
-   - Added Qsettings to save geometry & Last Position
-   - Added Check Update Button (about_dialog)
+## 📝 Changelog v4.5.1
+Update Macan Engine:
+1. Macan Video Downloader
+2. Macan Video Player
 ---
 ## 🚀 Getting Started & Installation
 
