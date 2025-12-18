@@ -25,13 +25,10 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v4.6.0
-1. Macan Movie Pro v4.6.1 - 5.0.0
-    - Added auto-hide controls in fullscreen mode
-    - Added timestamp on thumbnail seekbar preview
-    - Improved fullscreen experience
-    - Bug fixes and performance improvements
-    - Added Check Update
+## 📝 Changelog v4.7.0
+1. Macan Video Downloader v7.5.1 - 7.6.0
+   - Added batch_urls.txt delete function to Clear List
+   - Update Engine (macan-engine)
 ---
 ## 🚀 Getting Started & Installation
 
