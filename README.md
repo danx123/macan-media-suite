@@ -25,22 +25,14 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v5.0.0
-1. Macan Audio Player v8.8.0
-- Change Layout Radio Online
-- Change Layout Audio Converter
-- Change Layout Music Library
+## 📝 Changelog v5.2.0
+1. Macan Audio Player v9.2.0
+- Added Lazy Loading
+- Optimized Startup time
 
-2. Macan Vision v3.2.0
-- Added Transparent Mode
-
-3. Macan Video Downloader - Premium Edition v8.0.0
-- Change Layout Video Downloader
-- Change Layout Video Converter
-- Frameless Windows
-- Custom Titlebar
-- Windows Controls
-- Drag & Resize
+2. Macan Vision v3.3.0
+- Optimized Startup time
+- Added caching system
 ---
 ## 🚀 Getting Started & Installation
 
