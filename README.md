@@ -25,14 +25,11 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v5.2.0
-1. Macan Audio Player v9.2.0
-- Added Lazy Loading
-- Optimized Startup time
-
-2. Macan Vision v3.3.0
-- Optimized Startup time
-- Added caching system
+## 📝 Changelog v5.3.0
+1. Macan Movie Pro v5.5.0
+- Added Visualizer
+- Added Equalizer
+- Added Running text (video title)
 ---
 ## 🚀 Getting Started & Installation
 
