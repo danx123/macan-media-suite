@@ -56,6 +56,6 @@ For all bug reports, technical issues, or feature requests, please open an [**Is
 
 ## ⚖️ License MIT
 
-Copyright © 2025 - Danx Exodus - Macan Angkasa. All Rights Reserved.
+Copyright © 2026 - Danx Exodus - Macan Angkasa. All Rights Reserved.
 
 This software is distributed as freeware. It is provided "as is" without warranty of any kind, express or implied. The user assumes all risk associated with the use of this software.
