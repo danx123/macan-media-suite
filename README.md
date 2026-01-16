@@ -25,10 +25,9 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v5.7.0
-1. Macan Audio Player v9.7.0
-- Fixed Progress Audio Converter
-- Changed SVG icon (Shuffle)
+## 📝 Changelog v5.8.0
+1. Macan Audio Player v10.0.0
+- Real-time FFT Visualization
 
 
 ---
