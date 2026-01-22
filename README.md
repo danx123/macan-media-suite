@@ -25,9 +25,9 @@ This suite comprises five core applications, each engineered for a specific medi
     Your gateway to global online entertainment. Stream live radio stations and watch online TV channels directly from your desktop, browse by genre, or find your local favorites.
 
 ---
-## 📝 Changelog v6.3.0
-1. Macan Movie Pro v6.0.0
-   - Real sync FFT
+## 📝 Changelog v6.4.0
+1. Macan Audio Player v11.2.0
+   - Cinematic mode
 
 
 ---
