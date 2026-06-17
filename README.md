@@ -1,7 +1,10 @@
 # MACAN MEDIA SUITE
-<img width="1860" height="2742" alt="macan-media-suite-github" src="https://github.com/user-attachments/assets/b790b88b-ee65-477a-a3df-0b8b67cbe16d" />
 
 **Macan Media Suite** is a comprehensive, integrated software package designed to deliver a complete digital media experience. This suite provides a robust set of tools for high-fidelity audio playback, sophisticated video management, seamless online streaming, and efficient content downloading, all housed within a cohesive and user-friendly ecosystem.
+---
+
+<img width="1024" height="1479" alt="macan media suite" src="https://github.com/user-attachments/assets/76992fa4-90b9-4c15-8a5a-9bc64b40f81f" />
+
 
 ---
 
